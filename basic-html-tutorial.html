@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML & CSS</title>
+    </head>
+    <body>
+        <!--Content goes here-->
+        <h1>Basic HTML - Quick Reference</h1>
+        <p>First, we need to learn some basic HTML</p>
+
+        <h2>A few block-level elements:</h2>
+        <p>"Block-level elements", also called "flow content" are always drawn in a new line.</p>
+
+        <h3>Headings</h3>
+        <p>Headings define outline of your site. There are six levels of headings.</p>
+
+        <h3>Lists</h3>
+            <p>This is how you make an <strong> unordered list</strong>:</p>
+            <ul>
+                <li>Add an <strong>&#60;ul&#62;&#60;/ul&#62;</strong> element (it stands for unordered list)</li>
+                <li>Add each item in its own <strong>&#60;li&#62;&#60;/li&#62;</strong> element</li>
+                <li>They don't need to be in any particular order</li>
+            </ul>
+            
+            <p>This is how an <strong> ordered list </strong> looks like</p>
+            <ol>
+                <li>Notice the new <strong>&#60;ol&#62;&#60;/ol&#62;</strong> element wrapping everything</li>
+                <li>But,the list item elements are the same</li>
+                <li>Also note how the numbers increment on their own</li>
+                <li>You should be noticing things is the precise order because this is an ordered list</li>
+            </ol>
+        
+        <h2>Inline Elements</h2>
+        <p>"Inline elements" are also called "phrasing content". Inline elements can affect sections of text anywhere within a line</p>
+
+        <p><em>Sometimes</em>, you need to draw attention to a particular word or phrase. Use <strong> &#60;em&#62;&#60;/em&#62;</strong> tag for italic.</p>
+        <p>Other times you need to <strong>strong</strong>ly emphasize the importance of a word or phrase. Use <strong>&#60;strong&#62;</strong> tag.</p>
+        <p><em><strong>And sometimes you need to shout!</strong></em>. Combine &#60;strong&#62; and &#60;em&#62; tags.</p>
+
+        <h4>Structure vs Presentation</h4>
+        <p>You might be wondering why we're using the terms "emphasis" and "strong" instead of 
+            "italic" and "bold". That brings us to an important distinction between HTML and CSS. HTML markup should
+            provide <em>semantic</em> information about your content - not <em>presentational</em> information. In other words,
+            HTML shoud define the structure of your document, leaving its appearance to CSS.
+        </p>
+        <p>The pseudo-obsolete &#60;b&#62; and &#60;i&#62; elements are classic examples of this. They used to stand for "bold"
+            and "italic", respectively, but HTML5 attempted to create a clear separation between a document's structure and its presentation.
+            Thus &#60;i&#62; was replaced with &#60;em&#62;, since emphasized text can be displayes in all sorts of ways aside from being italicized.
+            Same for &#60;b&#62; and &#60;strong&#62;.
+        </p>
+        <p>Thanks to CSS we can alter the browser's default rendering of the &#60;strong&#62; and &#60;em&#62; elements. This furthers the point
+            that we shouldn't call it out as italized or bold text in the HTML, that's something for CSS to decide.
+        </p>
+
+        <h2>Empty HTML elements</h2>
+        <p>Some HTML elements can be "empty" or "self-closing". <strong>Line breaks</strong> and <strong>horizontal rules</strong> are the most common
+             empty elements you'll find.</p>
+        
+        <h3>Line breaks</h3>
+
+        <p>Thanks for reading! Interneting should be getting easier now.</p>
+        <p>Regards,
+            The Authors
+        </p>
+
+        <p>The new line after regards is transformed into a space instead of displaying as a line break</p>
+
+        <p>To tell the browser that we want a hard line break, we need to use an explicit &#60;br&#62; element, like this:</p>
+
+        <p>Regards, <strong>&#60;br/&#62;</strong><br/>
+        The Authors</p>
+
+        <h3>Horizontal rules</h3>
+
+        <p> The <strong>&#60;hr/&#62;</strong> element is a "horizontal rule,
+            which represents a thematic break. The transition from on scene of a story into the next or between
+            the end of a letter and a postcript are good examples of when a horizontal rule may be appropriate. 
+        </p>
+        <p>Like <strong>&#60;br/&#62;, &#60;hr/&#62;</strong> should carry meaning
+            --don't use it when you just want to display a line for the sake of aesthetics. For that, you'll
+            want to use the CSS "border" property.
+        </p>
+
+        <p>Another way to think about the &#60;hr/&#62; element is that it carries <em>less</em> signifiance
+            than the separation created by a new heading element, but <em>more</em>
+            signifiance than a new paragraph.
+            <br/>
+            For instance:</p>
+        
+
+        <h4>Empty Elements</h4>
+
+        <p>Thanks for reading! Interneting should be getting easier now.</p>
+
+        <p>Regards,&#60;br/&#62;<br>
+        The authors</p>
+
+        <strong>&#60;hr/&#62;</strong> <hr/>
+
+        <p>P.S. This page might look like crap, but we'll fix that with some CSS soon.</p>
+
+        <h2>Summary</h2>
+
+        <ul>
+            <li>Web pages are made of HTML elements.</li>
+            <li>Each element adds a different meaning to the text it contains.</li>
+            <li>Elements can be nested inside of each other.</li>
+        </ul>
+
+        <p>
+            <a href="https://www.internetingishard.com/html-and-css/basic-web-pages/">Go to complete tutorial</a>
+        </p>
+        <p>
+            <a href="https://www.internetingishard.com/html-and-css/basic-web-pages/">Browse code in GitHub</a>
+        </p>
+
+        <div><a href="">NEXT CHAPTER</a></div>
+    </body>
+</html>
